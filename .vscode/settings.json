@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "sql-ro-1.telescopelms.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "italo",
+            "database": "italo",
+            "username": "italo",
+            "password": "tpcHMqS9Uc9nAwBp7xQRq9XV"
+        }
+    ]
+}

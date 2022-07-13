@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Concluído</title>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="/"><img src="italo.png" width="260" alt="Logo Italo" href="/" /></a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="box">
+        <img src="agradecimento.png" width="160" class="thanksIMG">
+        <p class="msg">
+          <strong>Olá!<br><br>
+            Favor aguardar, em breve você será atendido por um de nossos consultores!</strong>
+        </p>
+      </div>
+    </div>
+  </main>
+  <script>
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    console.log(params.text)
+    document.querySelector('.msg').innerHTML = params.text
+    returnToPage()
+    function returnToPage() {
+      setTimeout(() => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        // window.location.href = params.callback_url
+      }, 5000)
+
+    }
+  </script>
+</body>
+
+</html>
